@@ -17,7 +17,7 @@ services:
 
   backend:
     build:
-      context: ./etec-pi-2024-backend-Santiii4
+      context: https://github.com/etec-integration-project/etec-pi-2024-backend-Santiii4.git
       dockerfile: Dockerfile
     restart: always
     depends_on:
@@ -36,7 +36,7 @@ services:
 
   frontend:
     build:
-      context: ./etec-pi-2024-frontend-Santiii4
+      context: https://github.com/etec-integration-project/etec-pi-2024-frontend-Santiii4.git
       dockerfile: Dockerfile
     restart: always
     depends_on:
@@ -51,7 +51,7 @@ services:
 
   nginx:
     build:
-      context: ./nginx
+      context: https://github.com/Santiii4/nginx-RIGA.git
       dockerfile: Dockerfile
     ports:
       - "80:80"
